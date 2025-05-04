@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react" //use this to add state to component
 
+import Form from "./Components/Form"
+import Table from "./components/Table"
 function HomePage(){
 
     //create some state keeping track of changing count
@@ -8,14 +10,13 @@ function HomePage(){
 
     return (
         <div> 
-            <h1>Counter: {count}</h1>
-            <button onClick={()=>{
-                //write some javascript for this function to call
-                setCount(count +1)
-            }}> Add One </button>
+            <h1> FavLinks </h1>
+
+            <Form />
+
+            <Table />
+
         </div>
-
-
     )
 }
 export default HomePage
